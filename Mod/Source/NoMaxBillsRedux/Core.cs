@@ -15,7 +15,7 @@ namespace NoMaxBillsRedux
 	{
 		public NoMaxBillsReduxMod (ModContentPack contentPack) : base(contentPack)
 		{
-			new Harmony("com.just-harry.no-max-bills-redux").PatchAll();
+			new Harmony("com.just-harry.no-max-bills-redux").PatchAll(typeof(NoMaxBillsReduxMod).Assembly);
 		}
 	}
 
